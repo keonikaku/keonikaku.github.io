@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Keoni Kakugawa — QA &amp; Release Management Portfolio</title>
+<style>
+  :root{
+    --bg:#0f1620; --panel:#16202c; --panel2:#1c2836; --line:#26333f;
+    --txt:#e8eef4; --muted:#93a4b4; --accent:#38bdf8; --accent2:#22c55e;
+    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --mono:'SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);font-family:var(--sans);line-height:1.6;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:900px;margin:0 auto;padding:48px 22px 70px;}
+  header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:34px;}
+  h1{font-size:30px;font-weight:700;margin:0 0 6px;letter-spacing:-.01em;}
+  .role{font-size:17px;color:var(--accent);font-weight:600;margin-bottom:10px;}
+  .tag{font-size:15px;color:var(--muted);max-width:640px;}
+  .links{margin-top:16px;display:flex;gap:18px;flex-wrap:wrap;font-size:14px;}
+  .links a{display:inline-flex;align-items:center;gap:6px;}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin:38px 0 16px;}
+  .cards{display:grid;grid-template-columns:1fr;gap:16px;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px;transition:border-color .15s;}
+  .card:hover{border-color:var(--accent);}
+  .card h3{font-size:19px;font-weight:600;margin:0 0 8px;}
+  .card p{font-size:15px;color:var(--muted);margin:0 0 14px;}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px;}
+  .chip{font-size:12px;background:var(--panel2);color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 11px;font-family:var(--mono);}
+  .cta{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:600;}
+  .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.03em;padding:3px 10px;border-radius:20px;margin-bottom:12px;}
+  .badge.live{background:rgba(34,197,94,.14);color:var(--accent2);}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;}
+  .skills span{font-size:13px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 12px;color:var(--txt);}
+  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:22px;color:var(--muted);font-size:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Keoni Kakugawa</h1>
+    <div class="role">QA &amp; Release Management Leader</div>
+    <div class="tag">20+ years leading quality assurance, data validation, test automation, and release delivery across enterprise healthcare, fintech, and consumer platforms — Cigna, Brighter, Telescope, DirecTV, and EA.</div>
+    <div class="links">
+      <a href="https://github.com/keonikaku">GitHub</a>
+      <a href="https://www.linkedin.com/in/keonikaku">LinkedIn</a>
+      <a href="mailto:keonikaku@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <h2>Selected Work</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>SQL Data Validation — Core Banking Migration Suite</h3>
+      <span class="badge live">● Live demo</span>
+      <p>An interactive, browser-based validation suite proving a legacy on-prem → modernized platform migration moved data completely, correctly, securely, and without performance regression. Real SQL checks across reconciliation, referential integrity, transformation, PII/security, and performance — with PASS/FAIL reporting, a query playground, and a full test strategy.</p>
+      <div class="chips"><span class="chip">SQL</span><span class="chip">SQLite</span><span class="chip">ETL validation</span><span class="chip">data quality</span><span class="chip">PII / security</span></div>
+      <div class="cta">
+        <a href="https://keonikaku.github.io/sql-data-validation/">▶ Live demo</a>
+        <a href="https://github.com/keonikaku/sql-data-validation">Source &amp; strategy docs</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>ShopSmart QA Automation Suite</h3>
+      <p>Playwright + Python end-to-end automation across web, mobile web, and native iOS (Appium / XCUITest) for a full e-commerce platform. Happy-path and negative coverage with visual HTML reporting.</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">Playwright</span><span class="chip">pytest</span><span class="chip">Appium</span><span class="chip">mobile / iOS</span></div>
+      <div class="cta">
+        <a href="https://github.com/keonikaku/automation">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Release Health Dashboard</h3>
+      <p>A Tableau dashboard turning test and release data into the release-health and quality-improvement metrics leadership uses to make go/no-go decisions — the reporting layer of release management.</p>
+      <div class="chips"><span class="chip">Tableau</span><span class="chip">release KPIs</span><span class="chip">data viz</span><span class="chip">reporting</span></div>
+      <div class="cta">
+        <a href="https://public.tableau.com/app/profile/keoni.kakugawa/viz/ReleaseDashboard_17815799488920/ReleaseHealthImprovement">View dashboard</a>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>Core Skills</h2>
+  <div class="skills">
+    <span>Test strategy &amp; planning</span>
+    <span>Source-to-target data validation</span>
+    <span>ETL / field-mapping validation</span>
+    <span>PII / security validation</span>
+    <span>Performance validation</span>
+    <span>Test automation</span>
+    <span>CI/CD</span>
+    <span>Release management</span>
+    <span>KPIs &amp; quality reporting</span>
+    <span>Agile / Scrum leadership</span>
+  </div>
+
+  <footer>
+    Keoni Kakugawa · QA &amp; Release Management Leader ·
+    <a href="https://github.com/keonikaku">github.com/keonikaku</a> ·
+    <a href="https://www.linkedin.com/in/keonikaku">LinkedIn</a>
+  </footer>
+</div>
+</body>
+</html>
