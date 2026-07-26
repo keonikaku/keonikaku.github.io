@@ -4,106 +4,312 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Keoni Kakugawa — QA &amp; Release Management Portfolio</title>
+<meta name="description" content="Keoni Kakugawa — QA &amp; Release Management Leader. 20+ years leading test automation, data validation, and release delivery." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
 <style>
   :root{
-    --bg:#0f1620; --panel:#16202c; --panel2:#1c2836; --line:#26333f;
-    --txt:#e8eef4; --muted:#93a4b4; --accent:#38bdf8; --accent2:#22c55e;
-    --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    --mono:'SFMono-Regular',ui-monospace,Menlo,Consolas,monospace;
+    --bg:#0a0e14; --bg-soft:#0d1219; --panel:#111826; --panel2:#161f2e; --line:#232e40; --line-soft:#1a2434;
+    --txt:#eef2f7; --muted:#8b9bb0; --muted-dim:#5c6c81;
+    --accent:#4fd1ff; --accent-2:#7c9cff; --accent-3:#34d399;
+    --grad: linear-gradient(120deg,#4fd1ff 0%,#7c9cff 55%,#34d399 100%);
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --mono:'JetBrains Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
+    --radius:16px;
+    --shadow: 0 20px 50px -20px rgba(0,0,0,.55);
   }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--txt);font-family:var(--sans);line-height:1.6;}
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:
+      radial-gradient(1100px 520px at 12% -10%, rgba(79,209,255,.10), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(124,156,255,.08), transparent 55%),
+      var(--bg);
+    color:var(--txt);
+    font-family:var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
   a{color:var(--accent);text-decoration:none;}
-  a:hover{text-decoration:underline;}
-  .wrap{max-width:900px;margin:0 auto;padding:48px 22px 70px;}
-  header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:34px;}
-  h1{font-size:30px;font-weight:700;margin:0 0 6px;letter-spacing:-.01em;}
-  .role{font-size:17px;color:var(--accent);font-weight:600;margin-bottom:10px;}
-  .tag{font-size:15px;color:var(--muted);max-width:640px;}
-  .links{margin-top:16px;display:flex;gap:18px;flex-wrap:wrap;font-size:14px;}
-  .links a{display:inline-flex;align-items:center;gap:6px;}
-  h2{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin:38px 0 16px;}
-  .cards{display:grid;grid-template-columns:1fr;gap:16px;}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 24px;transition:border-color .15s;}
-  .card:hover{border-color:var(--accent);}
-  .card h3{font-size:19px;font-weight:600;margin:0 0 8px;}
-  .card p{font-size:15px;color:var(--muted);margin:0 0 14px;}
-  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px;}
-  .chip{font-size:12px;background:var(--panel2);color:var(--muted);border:1px solid var(--line);border-radius:20px;padding:3px 11px;font-family:var(--mono);}
-  .cta{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:600;}
-  .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.03em;padding:3px 10px;border-radius:20px;margin-bottom:12px;}
-  .badge.live{background:rgba(34,197,94,.14);color:var(--accent2);}
-  .skills{display:flex;flex-wrap:wrap;gap:8px;}
-  .skills span{font-size:13px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:6px 12px;color:var(--txt);}
-  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:22px;color:var(--muted);font-size:14px;}
+  a:hover{color:#fff;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px;}
+  ::selection{background:rgba(79,209,255,.25);color:#fff;}
+
+  /* ---------- Nav ---------- */
+  .nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(10,14,20,.72);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line-soft);
+  }
+  .nav-inner{max-width:1040px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;}
+  .brand{font-weight:700;font-size:15px;letter-spacing:-.01em;color:var(--txt);}
+  .brand span{color:var(--accent);}
+  .nav-links{display:flex;gap:26px;font-size:14px;font-weight:500;}
+  .nav-links a{color:var(--muted);}
+  .nav-links a:hover{color:var(--txt);}
+  @media (max-width:640px){ .nav-links{display:none;} }
+
+  /* ---------- Hero ---------- */
+  .hero{padding:88px 0 64px;border-bottom:1px solid var(--line-soft);}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:var(--mono);font-size:12.5px;color:var(--accent-3);
+    background:rgba(52,211,153,.08);border:1px solid rgba(52,211,153,.25);
+    padding:5px 12px;border-radius:100px;margin-bottom:22px;
+  }
+  .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent-3);box-shadow:0 0 0 3px rgba(52,211,153,.18);}
+  h1{
+    font-size:clamp(34px,5.2vw,54px);
+    font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:0 0 14px;
+  }
+  h1 .grad{
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .role{font-size:clamp(17px,2vw,20px);color:var(--txt);font-weight:600;margin-bottom:16px;}
+  .role span{color:var(--muted);font-weight:500;}
+  .tag{font-size:16px;color:var(--muted);max-width:620px;}
+  .links{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;}
+  .links a{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:14px;font-weight:600;color:var(--txt);
+    background:var(--panel);border:1px solid var(--line);
+    padding:10px 16px;border-radius:10px;
+    transition:border-color .15s ease, transform .15s ease, background .15s ease;
+  }
+  .links a:hover{border-color:var(--accent);background:var(--panel2);transform:translateY(-1px);color:#fff;}
+  .links svg{width:16px;height:16px;flex-shrink:0;}
+
+  /* ---------- Section headings ---------- */
+  section.block{padding:64px 0;}
+  section.block + section.block{border-top:1px solid var(--line-soft);}
+  .kicker{
+    font-family:var(--mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.12em;
+    color:var(--accent);font-weight:600;margin:0 0 8px;
+  }
+  .block h2{font-size:clamp(22px,3vw,28px);font-weight:800;letter-spacing:-.02em;margin:0 0 40px;color:var(--txt);}
+
+  /* ---------- Project cards ---------- */
+  .cards{display:grid;grid-template-columns:1fr;gap:20px;}
+  .card{
+    position:relative;background:var(--panel);border:1px solid var(--line);
+    border-radius:var(--radius);padding:28px 28px 26px;
+    transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover{border-color:rgba(79,209,255,.45);transform:translateY(-3px);box-shadow:var(--shadow);}
+  .card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap;}
+  .card h3{font-size:20px;font-weight:700;margin:0;letter-spacing:-.01em;}
+  .badge{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;
+    padding:4px 10px;border-radius:100px;white-space:nowrap;
+  }
+  .badge.live{background:rgba(52,211,153,.12);color:var(--accent-3);border:1px solid rgba(52,211,153,.3);}
+  .badge.live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent-3);}
+  .card p.desc{font-size:15px;color:var(--muted);margin:0 0 18px;max-width:640px;}
+
+  .coverage{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+  .coverage span{
+    font-size:12px;font-weight:600;color:var(--accent-2);
+    background:rgba(124,156,255,.08);border:1px solid rgba(124,156,255,.28);
+    padding:4px 11px;border-radius:8px;
+  }
+
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:20px;}
+  .chip{
+    font-size:12px;background:var(--panel2);color:var(--muted);border:1px solid var(--line);
+    border-radius:7px;padding:4px 10px;font-family:var(--mono);
+  }
+
+  .cta{display:flex;gap:10px;flex-wrap:wrap;}
+  .cta a{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:13.5px;font-weight:600;color:var(--txt);
+    border:1px solid var(--line);padding:8px 14px;border-radius:9px;
+    transition:border-color .15s ease, background .15s ease, color .15s ease;
+  }
+  .cta a.primary{background:rgba(79,209,255,.1);border-color:rgba(79,209,255,.35);color:var(--accent);}
+  .cta a:hover{border-color:var(--accent);background:var(--panel2);color:#fff;}
+
+  /* ---------- Skills ---------- */
+  .skills-grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media (min-width:640px){ .skills-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (min-width:900px){ .skills-grid{grid-template-columns:repeat(3,1fr);} }
+  .skill-group{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 22px 18px;
+  }
+  .skill-group h4{
+    margin:0 0 14px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;
+    color:var(--muted-dim);font-weight:700;
+  }
+  .skill-group ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
+  .skill-group li{
+    font-size:14.5px;color:var(--txt);display:flex;align-items:center;gap:10px;
+  }
+  .skill-group li::before{
+    content:"";width:6px;height:6px;border-radius:2px;background:var(--grad);flex-shrink:0;
+  }
+
+  /* ---------- Footer ---------- */
+  footer{padding:44px 0 60px;border-top:1px solid var(--line-soft);}
+  .foot-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+  .foot-name{font-weight:700;color:var(--txt);font-size:15px;}
+  .foot-role{color:var(--muted);font-size:13.5px;margin-top:2px;}
+  .foot-links{display:flex;gap:20px;font-size:13.5px;}
+  .foot-links a{color:var(--muted);}
+  .foot-links a:hover{color:var(--accent);}
+
+  @media (max-width:640px){
+    .hero{padding:56px 0 44px;}
+    section.block{padding:48px 0;}
+    .card{padding:22px 20px;}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>Keoni Kakugawa</h1>
-    <div class="role">QA &amp; Release Management Leader</div>
-    <div class="tag">20+ years leading quality assurance, data validation, test automation, and release delivery across enterprise healthcare, fintech, and consumer platforms — Cigna, Brighter, Telescope, DirecTV, and EA.</div>
-    <div class="links">
-      <a href="https://github.com/keonikaku">GitHub</a>
-      <a href="https://www.linkedin.com/in/keonikaku">LinkedIn</a>
-      <a href="mailto:keonikaku@gmail.com">Email</a>
-    </div>
-  </header>
 
-  <h2>Selected Work</h2>
-  <div class="cards">
-
-    <div class="card">
-      <h3>SQL Data Validation — Core Banking Migration Suite</h3>
-      <span class="badge live">● Live demo</span>
-      <p>An interactive, browser-based validation suite proving a legacy on-prem → modernized platform migration moved data completely, correctly, securely, and without performance regression. Real SQL checks across reconciliation, referential integrity, transformation, PII/security, and performance — with PASS/FAIL reporting, a query playground, and a full test strategy.</p>
-      <div class="chips"><span class="chip">SQL</span><span class="chip">SQLite</span><span class="chip">ETL validation</span><span class="chip">data quality</span><span class="chip">PII / security</span></div>
-      <div class="cta">
-        <a href="https://keonikaku.github.io/sql-data-validation/">▶ Live demo</a>
-        <a href="https://github.com/keonikaku/sql-data-validation">Source &amp; strategy docs</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Keoni <span>Kakugawa</span></div>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
+  </nav>
 
-    <div class="card">
-      <h3>ShopSmart QA Automation Suite</h3>
-      <p>Playwright + Python end-to-end automation across web, mobile web, and native iOS (Appium / XCUITest) for a full e-commerce platform. Happy-path and negative coverage with visual HTML reporting.</p>
-      <div class="chips"><span class="chip">Python</span><span class="chip">Playwright</span><span class="chip">pytest</span><span class="chip">Appium</span><span class="chip">mobile / iOS</span></div>
-      <div class="cta">
-        <a href="https://github.com/keonikaku/automation">View on GitHub</a>
-      </div>
-    </div>
+  <div class="wrap">
 
-    <div class="card">
-      <h3>Release Health Dashboard</h3>
-      <p>A Tableau dashboard turning test and release data into the release-health and quality-improvement metrics leadership uses to make go/no-go decisions — the reporting layer of release management.</p>
-      <div class="chips"><span class="chip">Tableau</span><span class="chip">release KPIs</span><span class="chip">data viz</span><span class="chip">reporting</span></div>
-      <div class="cta">
-        <a href="https://public.tableau.com/app/profile/keoni.kakugawa/viz/ReleaseDashboard_17815799488920/ReleaseHealthImprovement">View dashboard</a>
+    <header class="hero">
+      <div class="eyebrow">Open to Release / QA leadership roles</div>
+      <h1>Keoni Kakugawa builds <span class="grad">quality &amp; release&nbsp;confidence</span> at scale.</h1>
+      <div class="role">QA &amp; Release Management Leader <span>· 20+ years</span></div>
+      <p class="tag">Leading quality assurance, data validation, test automation, and release delivery across enterprise healthcare, fintech, and consumer platforms — Cigna, Brighter, Telescope, DirecTV, and EA.</p>
+      <div class="links">
+        <a href="https://github.com/keonikaku">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2c-3.17.69-3.83-1.53-3.83-1.53-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.73 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/keonikaku">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:keonikaku@gmail.com">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 4.5h20a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-13a1 1 0 0 1 1-1Zm1.4 2 8.6 6.53L20.6 6.5H3.4Zm17.6 1.68-8.09 6.14a1 1 0 0 1-1.22 0L3.6 6.18V17.5h17.4V6.68Z"/></svg>
+          Email
+        </a>
       </div>
-    </div>
+    </header>
+
+    <section class="block" id="work">
+      <div class="kicker">Selected Work</div>
+      <h2>Projects that show the work, not just the résumé</h2>
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-top">
+            <h3>SQL Data Validation — Core Banking Migration Suite</h3>
+            <span class="badge live">Live demo</span>
+          </div>
+          <p class="desc">An interactive, browser-based validation suite proving a legacy on-prem → modernized platform migration moved data completely, correctly, securely, and without performance regression. Real SQL checks across reconciliation, referential integrity, transformation, PII/security, and performance — with PASS/FAIL reporting, a query playground, and a full test strategy.</p>
+          <div class="chips">
+            <span class="chip">SQL</span><span class="chip">SQLite</span><span class="chip">ETL validation</span><span class="chip">data quality</span><span class="chip">PII / security</span>
+          </div>
+          <div class="cta">
+            <a class="primary" href="https://keonikaku.github.io/sql-data-validation/">▶ Live demo</a>
+            <a href="https://github.com/keonikaku/sql-data-validation">Source &amp; strategy docs</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <h3>ShopSmart QA Automation Suite</h3>
+          </div>
+          <p class="desc">Full end-to-end QA automation for an e-commerce platform — one suite covering the entire surface area a real release needs to ship with confidence: desktop web, mobile web, and native iOS. Happy-path and negative coverage with visual HTML reporting.</p>
+          <div class="coverage">
+            <span>🖥 Web</span><span>📱 Mobile Web</span><span>📲 Native iOS</span>
+          </div>
+          <div class="chips">
+            <span class="chip">Playwright</span><span class="chip">Python</span><span class="chip">pytest</span><span class="chip">Appium</span><span class="chip">XCUITest</span><span class="chip">iPhone Simulator</span>
+          </div>
+          <div class="cta">
+            <a href="https://github.com/keonikaku/automation">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <h3>Release Health Dashboard</h3>
+          </div>
+          <p class="desc">A Tableau dashboard turning test and release data into the release-health and quality-improvement metrics leadership uses to make go/no-go decisions — the reporting layer of release management.</p>
+          <div class="chips">
+            <span class="chip">Tableau</span><span class="chip">release KPIs</span><span class="chip">data viz</span><span class="chip">reporting</span>
+          </div>
+          <div class="cta">
+            <a href="https://public.tableau.com/app/profile/keoni.kakugawa/viz/ReleaseDashboard_17815799488920/ReleaseHealthImprovement">View dashboard</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="block" id="skills">
+      <div class="kicker">Capabilities</div>
+      <h2>Core skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Quality &amp; Validation</h4>
+          <ul>
+            <li>Test strategy &amp; planning</li>
+            <li>Source-to-target data validation</li>
+            <li>ETL / field-mapping validation</li>
+            <li>PII / security validation</li>
+            <li>Performance validation</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Automation &amp; Tooling</h4>
+          <ul>
+            <li>Test automation (Playwright, Appium)</li>
+            <li>CI/CD pipelines</li>
+            <li>SQL &amp; data quality tooling</li>
+            <li>Visual test reporting</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Delivery &amp; Leadership</h4>
+          <ul>
+            <li>Release management</li>
+            <li>KPIs &amp; quality reporting</li>
+            <li>Agile / Scrum leadership</li>
+            <li>Cross-functional stakeholder alignment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
   </div>
 
-  <h2>Core Skills</h2>
-  <div class="skills">
-    <span>Test strategy &amp; planning</span>
-    <span>Source-to-target data validation</span>
-    <span>ETL / field-mapping validation</span>
-    <span>PII / security validation</span>
-    <span>Performance validation</span>
-    <span>Test automation</span>
-    <span>CI/CD</span>
-    <span>Release management</span>
-    <span>KPIs &amp; quality reporting</span>
-    <span>Agile / Scrum leadership</span>
-  </div>
-
-  <footer>
-    Keoni Kakugawa · QA &amp; Release Management Leader ·
-    <a href="https://github.com/keonikaku">github.com/keonikaku</a> ·
-    <a href="https://www.linkedin.com/in/keonikaku">LinkedIn</a>
+  <footer id="contact">
+    <div class="wrap">
+      <div class="foot-row">
+        <div>
+          <div class="foot-name">Keoni Kakugawa</div>
+          <div class="foot-role">QA &amp; Release Management Leader</div>
+        </div>
+        <div class="foot-links">
+          <a href="https://github.com/keonikaku">GitHub</a>
+          <a href="https://www.linkedin.com/in/keonikaku">LinkedIn</a>
+          <a href="mailto:keonikaku@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
   </footer>
-</div>
+
 </body>
 </html>
