@@ -232,16 +232,21 @@
             <h3>ShopSmart QA Automation Suite</h3>
             <span class="badge walkthrough">Recorded test runs</span>
           </div>
-          <p class="desc">A pytest suite covering three surfaces across two targets: desktop and mobile web driven by Playwright against a public practice site (automationexercise.com), plus native iOS driven by Appium / XCUITest against the Sauce Labs demo app on an iPhone Simulator. 11 tests spanning happy-path and negative scenarios, with HTML reporting and automatic video recording of each run. Eight unedited recordings from a 2026-07-28 run are published, all passing. Runs locally; no CI pipeline yet.</p>
+          <p class="desc">A pytest suite covering three surfaces across two targets: desktop and mobile web driven by Playwright against a public practice site (automationexercise.com), plus native iOS driven by Appium / XCUITest against the Sauce Labs demo app on an iPhone Simulator. 11 tests spanning happy-path and negative scenarios, built on page objects and pytest fixtures, headless by default, with pinned dependencies and automatic video recording of every run. Ten unedited recordings from a 2026-07-28 headless run are published, all passing.</p>
+          <p class="desc">The badge is the deterministic gate — dependency install, lint, unit tests and collection integrity, run on every commit against two Python versions. The live web suite runs on a nightly schedule and is reported separately rather than wired to the badge, because a badge pointed at a third-party practice site goes red for reasons the code does not control. Native iOS is excluded from CI by design and run locally.</p>
+          <p style="margin:0 0 18px;">
+            <a href="https://github.com/keonikaku/automation/actions/workflows/ci.yml"><img src="https://github.com/keonikaku/automation/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI workflow status for the ShopSmart automation repository" style="height:20px;vertical-align:middle;" /></a>
+          </p>
           <div class="coverage">
             <span>🖥 Web</span><span>📱 Mobile Web</span><span>📲 Native iOS</span>
           </div>
           <div class="chips">
-            <span class="chip">Playwright</span><span class="chip">Python</span><span class="chip">pytest</span><span class="chip">Appium</span><span class="chip">XCUITest</span><span class="chip">iPhone Simulator</span>
+            <span class="chip">Playwright</span><span class="chip">Python</span><span class="chip">pytest</span><span class="chip">Appium</span><span class="chip">XCUITest</span><span class="chip">iPhone Simulator</span><span class="chip">GitHub Actions</span>
           </div>
           <div class="cta">
             <a class="primary" href="https://keonikaku.github.io/automation/">▶ Watch recorded runs</a>
             <a href="https://github.com/keonikaku/automation">View on GitHub</a>
+            <a href="https://github.com/keonikaku/automation/blob/main/docs/quality-gates.md">Quality gates</a>
           </div>
         </div>
 
@@ -266,6 +271,7 @@
           <h4>Automation &amp; Tooling</h4>
           <ul>
             <li>Test automation (Playwright, Appium)</li>
+            <li>CI/CD pipelines (GitHub Actions)</li>
             <li>SQL &amp; data quality tooling</li>
             <li>Visual test reporting</li>
           </ul>
