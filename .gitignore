@@ -1,0 +1,6 @@
+# Internal working documents — NEVER commit.
+# This repo is served publicly by GitHub Pages, so anything committed here
+# is readable at https://keonikaku.github.io/<path>. The plan and claims
+# ledger contain candid internal assessments and must stay local.
+docs/
+.DS_Store
