@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Keoni Kakugawa — QA &amp; Release Management Portfolio</title>
-<meta name="description" content="Keoni Kakugawa — QA &amp; Release Management Leader. 20+ years in software, 15 in QA, ~6 in release management — leading test automation, data validation, and release delivery." />
+<title>Keoni Kakugawa | QA &amp; Release Management Portfolio</title>
+<meta name="description" content="Keoni Kakugawa, QA &amp; Release Management Leader. 20+ years in software, 15 in QA, ~6 in release management, leading test automation, data validation, and release delivery." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
@@ -191,7 +191,7 @@
       <div class="eyebrow">Open to Release / QA leadership roles</div>
       <h1>Keoni Kakugawa builds <span class="grad">quality &amp; release&nbsp;confidence</span> at scale.</h1>
       <div class="role">QA &amp; Release Management Leader <span>· 20+ years in software, 15 in QA</span></div>
-      <p class="tag">Leading quality assurance, data validation, test automation, and release delivery across enterprise healthcare, fintech, and consumer platforms — Cigna, Brighter, Telescope, DirecTV, and EA.</p>
+      <p class="tag">Leading quality assurance, data validation, test automation, and release delivery across enterprise healthcare, fintech, and consumer platforms: Cigna, Brighter, Telescope, DirecTV, and EA.</p>
       <div class="links">
         <a href="https://github.com/keonikaku">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2c-3.17.69-3.83-1.53-3.83-1.53-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.73 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.34-5.21 5.62.41.36.77 1.06.77 2.14v3.17c0 .3.21.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
@@ -215,11 +215,11 @@
 
         <div class="card">
           <div class="card-top">
-            <h3>SQL Data Validation — Core Banking Migration Suite</h3>
+            <h3>SQL Data Validation: Core Banking Migration Suite</h3>
             <span class="badge live">Live demo</span>
           </div>
-          <p class="desc">An interactive, browser-based validation suite proving a legacy on-prem → modernized platform migration moved data completely, correctly, securely, and without performance regression. Real SQL checks across reconciliation, referential integrity, transformation, PII/security, and performance — with PASS/FAIL reporting, a query playground, and a full test strategy.</p>
-          <p class="desc">Seven checks across five categories, and two of them pass by design. A validation suite in which every check fails is indistinguishable from one that is broken — nothing in an all-red report tells you whether the checks discriminate or simply always return red. The two controls run the same techniques as their failing neighbours against parts of the migration that came through clean, which is what makes the five red results evidence rather than noise.</p>
+          <p class="desc">An interactive, browser-based validation suite proving a legacy on-prem → modernized platform migration moved data completely, correctly, securely, and without performance regression. Real SQL checks across reconciliation, referential integrity, transformation, PII/security, and performance, with PASS/FAIL reporting, a query playground, and a full test strategy.</p>
+          <p class="desc">Seven checks across five categories, and two of them pass by design. A validation suite in which every check fails is indistinguishable from one that is broken. Nothing in an all-red report tells you whether the checks discriminate or simply always return red. The two controls run the same techniques as their failing neighbours against parts of the migration that came through clean, which is what makes the five red results evidence rather than noise.</p>
           <div class="chips">
             <span class="chip">SQL</span><span class="chip">SQLite</span><span class="chip">ETL validation</span><span class="chip">data quality</span><span class="chip">PII / security</span>
           </div>
@@ -235,9 +235,8 @@
             <h3>ShopSmart QA Automation Suite</h3>
             <span class="badge walkthrough">Recorded test runs</span>
           </div>
-          <p class="desc">A pytest suite covering three surfaces across two targets: desktop and mobile web driven by Playwright against a public practice site (automationexercise.com), plus native iOS driven by Appium / XCUITest against the Sauce Labs demo app on an iPhone Simulator. 11 tests spanning happy-path and negative scenarios, built on page objects and pytest fixtures, headless by default, with pinned dependencies and automatic video recording of every run. Two unedited recordings from 2026-07-28 are published — one continuous walkthrough of the web flows in a single browser session, and one screen capture of an iPhone Simulator while Appium drives the native app — both produced by this repository&rsquo;s own code.</p>
-          <p class="desc">The badge is the deterministic gate — dependency install, lint, unit tests and collection integrity, run on every commit against two Python versions. The live web suite runs on a nightly schedule and is reported separately rather than wired to the badge, because a badge pointed at a third-party practice site goes red for reasons the code does not control. Native iOS is excluded from CI by design and run locally.</p>
-          <p class="desc">The automation was built from written test cases, and all 54 of them are published. 19 flag <b>a spec gap awaiting PM</b> in place of an expected result — where the specification was silent, the case records that and proposes an expectation rather than inventing one and turning a guess into the standard the build gets measured against. One defect, SMART-201, is traced through three catalog cases and into the smoke suite.</p>
+          <p class="desc">A pytest suite covering desktop web, mobile web and native iOS. Playwright drives the web flows against a public practice site (automationexercise.com); Appium and XCUITest drive the Sauce Labs demo app on an iPhone Simulator. 11 tests built on page objects and fixtures, headless by default, with pinned dependencies and video recording on every run. Two unedited recordings from 2026-07-28 are published, both produced by this repository&rsquo;s own code.</p>
+          <p class="desc">The badge is the deterministic gate: dependency install, lint, unit tests and collection integrity, run on every commit against two Python versions. The live web suite runs nightly and is reported separately rather than wired to the badge, because a badge pointed at a third-party site goes red for reasons the code does not control. Native iOS is excluded from CI by design and run locally. The 54 manual test cases the automation was written from are published in full.</p>
           <p style="margin:0 0 18px;">
             <a href="https://github.com/keonikaku/automation/actions/workflows/ci.yml"><img src="https://github.com/keonikaku/automation/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI workflow status for the ShopSmart automation repository" style="height:20px;vertical-align:middle;" /></a>
           </p>
@@ -265,7 +264,7 @@
 
         <div class="card">
           <div class="card-top">
-            <h3>Migration Test Strategy — core banking cutover</h3>
+            <h3>Migration Test Strategy for a core banking cutover</h3>
           </div>
           <p class="desc">The document that governs the SQL validation suite. Five validation categories, each with the method that proves it. Risk-based prioritisation that makes PII exposure and performance regression cutover blockers rather than findings. Four KPIs with explicit targets, including a defect-leakage measure. A Test Manager / Test Engineer model that keeps query authorship with engineering while coverage, interpretation and sign-off sit with one owner. And the go/no-go criteria the cutover decision is made against, written down before the decision.</p>
           <div class="cta">
@@ -275,9 +274,9 @@
 
         <div class="card">
           <div class="card-top">
-            <h3>ShopSmart manual test case catalog — 54 cases</h3>
+            <h3>ShopSmart manual test case catalog: 54 cases</h3>
           </div>
-          <p class="desc">The specification work the automation was written from, with the four original files downloadable unmodified: 20 registration and login cases, 18 catalog and search, 15 shopping cart, and a smoke suite. 19 flag <b>a spec gap awaiting PM</b> rather than assert an expected result the spec never defined. SMART-201 shows one defect traced through three catalog cases and into the smoke suite. Automation coverage — 5 cases fully, 4 partially, 45 not — is derived from the suite rather than claimed, and a unit test fails the build if a mapped test stops existing.</p>
+          <p class="desc">The specification work the automation was written from, with the four original files downloadable unmodified: 20 registration and login cases, 18 catalog and search, 15 shopping cart, and a smoke suite. 19 flag <b>a spec gap awaiting PM</b> rather than assert an expected result the spec never defined. SMART-201 shows one defect traced through three catalog cases and into the smoke suite. Automation coverage (5 cases fully, 4 partially, 45 not) is derived from the suite rather than claimed, and a unit test fails the build if a mapped test stops existing.</p>
           <div class="cta">
             <a class="primary" href="https://keonikaku.github.io/automation/test-cases.html">Read the test cases</a>
           </div>
@@ -285,7 +284,7 @@
 
         <div class="card">
           <div class="card-top">
-            <h3>Quality gates — what has to be green before a change lands</h3>
+            <h3>Quality gates: what has to be green before a change lands</h3>
           </div>
           <p class="desc">Why this portfolio publishes one badge and not two. A deterministic gate runs on every commit and is a pure function of the code; the suite that drives a third-party practice site runs on a schedule and is reported separately, because a badge that goes red for reasons the author cannot control teaches everyone to ignore it. The document also states plainly that the merge standard is a convention held by whoever merges, not a branch-protection rule GitHub enforces.</p>
           <div class="cta">
