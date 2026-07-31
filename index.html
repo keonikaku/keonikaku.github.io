@@ -236,28 +236,12 @@
 
         <div class="card">
           <div class="card-top">
-            <h3>SQL Data Validation: Core Banking Migration Suite</h3>
-            <span class="badge live">Live demo</span>
-          </div>
-          <p class="desc">An interactive, browser-based validation suite built against a constructed core banking migration scenario: a legacy on-prem platform moving to a modernized one, with defects seeded on purpose. The checks are real SQL run in the browser against a real database, covering reconciliation, referential integrity, transformation, PII/security, and performance, with PASS/FAIL reporting, a query playground, and a full test strategy.</p>
-          <p class="desc">Seven checks across five categories, and two of them pass by design. A validation suite in which every check fails is indistinguishable from one that is broken. Nothing in an all-red report tells you whether the checks discriminate or simply always return red. The two controls run the same techniques as their failing neighbours against parts of the migration that came through clean, which is what makes the five red results evidence rather than noise.</p>
-          <div class="chips">
-            <span class="chip">SQL</span><span class="chip">SQLite</span><span class="chip">ETL validation</span><span class="chip">data quality</span><span class="chip">PII / security</span>
-          </div>
-          <div class="cta">
-            <a class="primary" href="https://keonikaku.github.io/sql-data-validation/">▶ Live demo</a>
-            <a href="https://github.com/keonikaku/sql-data-validation/blob/main/strategy/migration_test_strategy.md">Test strategy</a>
-            <a href="https://github.com/keonikaku/sql-data-validation">View on GitHub</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-top">
             <h3>ShopSmart QA Automation Suite</h3>
             <span class="badge walkthrough">Recorded test runs</span>
           </div>
-          <p class="desc">A pytest suite covering desktop web, mobile web and native iOS. Playwright drives the web flows against a public practice site (automationexercise.com); Appium and XCUITest drive the Sauce Labs demo app on an iPhone Simulator. 11 tests built on page objects and fixtures, headless by default, with pinned dependencies and video recording on every run. Two unedited recordings from 2026-07-28 are published, both produced by this repository&rsquo;s own code.</p>
-          <p class="desc">The badge is the deterministic gate: dependency install, lint, unit tests and collection integrity, run on every commit against two Python versions. The live web suite runs nightly and is reported separately rather than wired to the badge, because a badge pointed at a third-party site goes red for reasons the code does not control. Native iOS is excluded from CI by design and run locally. The 54 manual test cases the automation was written from are published in full.</p>
+          <p class="desc">A pytest suite covering desktop web, mobile web and native iOS. Playwright drives the web flows against a public practice site (automationexercise.com), and Appium with XCUITest drives the Sauce Labs demo app on an iPhone Simulator. 11 tests built on page objects and fixtures, with video recording on every run. Two unedited recordings are published, along with the 54 manual test cases the automation was written from.</p>
+          <p class="desc">I built this one myself. I set up VS Code, Playwright, Appium and Xcode on my own machine, found every element identifier by hand, and worked through the login failures and timeouts as they came, with AI helping me write and correct the code. The 54 test cases were written one at a time in TestRail before any automation existed, and I pushed the work up myself.</p>
+          <p class="desc">I wanted my automation skills current again, and to prove I could still do the work end to end rather than only manage people who do it. This is the hands-on counterpart to the API project.</p>
           <p style="margin:0 0 18px;">
             <a href="https://github.com/keonikaku/automation/actions/workflows/ci.yml"><img src="https://github.com/keonikaku/automation/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI workflow status for the ShopSmart automation repository" style="height:20px;vertical-align:middle;" /></a>
           </p>
@@ -272,6 +256,23 @@
             <a href="https://keonikaku.github.io/automation/test-cases.html">54 test cases</a>
             <a href="https://github.com/keonikaku/automation/blob/main/docs/quality-gates.md">Quality gates</a>
             <a href="https://github.com/keonikaku/automation">View on GitHub</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <h3>SQL Data Validation: Core Banking Migration Suite</h3>
+            <span class="badge live">Live demo</span>
+          </div>
+          <p class="desc">An interactive, browser-based validation suite built against a constructed core banking migration scenario: a legacy on-prem platform moving to a modernized one, with defects seeded on purpose. The checks are real SQL run in the browser against a real database, covering reconciliation, referential integrity, transformation, PII/security, and performance, with PASS/FAIL reporting, a query playground, and a full test strategy.</p>
+          <p class="desc">Seven checks across five categories, and two of them pass by design. A validation suite in which every check fails is indistinguishable from one that is broken. Nothing in an all-red report tells you whether the checks discriminate or simply always return red. The two controls run the same techniques as their failing neighbours against parts of the migration that came through clean, which is what makes the five red results evidence rather than noise.</p>
+          <div class="chips">
+            <span class="chip">SQL</span><span class="chip">SQLite</span><span class="chip">ETL validation</span><span class="chip">data quality</span><span class="chip">PII / security</span>
+          </div>
+          <div class="cta">
+            <a class="primary" href="https://keonikaku.github.io/sql-data-validation/">▶ Live demo</a>
+            <a href="https://github.com/keonikaku/sql-data-validation/blob/main/strategy/migration_test_strategy.md">Test strategy</a>
+            <a href="https://github.com/keonikaku/sql-data-validation">View on GitHub</a>
           </div>
         </div>
 
